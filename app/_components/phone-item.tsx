@@ -25,6 +25,7 @@ const PhoneItem = ({ phone }: PhoneItemProps) => {
       <Button
         variant="outline"
         size="sm"
+        className="rounded-full px-5"
         onClick={() => handleCopyPhoneClick(phone)}
       >
         Copiar
