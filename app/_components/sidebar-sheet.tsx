@@ -2,8 +2,7 @@ import { Button } from "./ui/button"
 import { CalendarIcon, HomeIcon, LogOutIcon } from "lucide-react"
 import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
 import { quickSearchOptions } from "../_constants/search"
-import { Avatar } from "./ui/avatar"
-import { AvatarImage } from "@radix-ui/react-avatar"
+import { Avatar, AvatarImage } from "./ui/avatar"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -21,7 +20,7 @@ const SidebarSheet = () => {
 
         <div>
           <p className="font-bold">Felipe Rocha</p>
-          <p className="text-xs">felipe@fullstackclub.io</p>
+          <p className="text-xs">felipe@gmail.com</p>
         </div>
       </div>
 
