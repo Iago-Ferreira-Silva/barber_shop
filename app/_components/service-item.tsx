@@ -10,7 +10,7 @@ interface ServiceItemProps {
 const ServiceItem = ({ service }: ServiceItemProps) => {
   return (
     <Card>
-      <CardContent className="flex items-center gap-3 p-3">
+      <CardContent className="flex gap-3 p-3">
         {/* IMAGE */}
         <div className="relative max-h-[110px] min-h-[110px] min-w-[110px] max-w-[110px]">
           <Image
@@ -21,7 +21,7 @@ const ServiceItem = ({ service }: ServiceItemProps) => {
           />
         </div>
         {/* DIREITA */}
-        <div className="space-y-2">
+        <div className="flex flex-1 flex-col justify-between">
           <h3 className="text-sm font-semibold">{service.name}</h3>
           <p className="text-sm text-gray-400">{service.description}</p>
           {/* PREÇO E BOTÃO */}
@@ -33,7 +33,7 @@ const ServiceItem = ({ service }: ServiceItemProps) => {
               }).format(Number(service.price))}
             </p>
 
-            <Button variant="secondary" size="sm">
+            <Button variant="secondary" size="sm" className="rounded-full px-5">
               Reservar
             </Button>
           </div>
